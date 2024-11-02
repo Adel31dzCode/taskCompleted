@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2f34;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-section {
+    text-align: center;
+    background-color: transparent;
+    position: relative;
+    padding: 20px;
+    width: 800px;
+    height: 260px;
+    border-radius: 8px;
+}
+
+
+.txt-btw-lines {
+    position: relative;
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin-bottom: -25px;
+    margin-right: -5px;
+}
+.txt-btw-lines::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-250%);
+    width: 37%;
+    height: 2px;
+    background-color: #a18a68;
+}
+.txt-btw-lines::before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-250%);
+    width: 37%;
+    height: 2px;
+    background-color: #a18a68;
+}
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: #33373b;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    color: #b3915f;
+    font-weight: bold;
+}
+
+.contact-info span {
+    font-size: 25px;
+    color: #fff;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-media {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: -8px;
+}
+.social-media::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 60%;
+    transform: translateY(-250%);
+    width: 40%;
+    height: 2px;
+    background-color: #a18a68;
+}
+.social-media::before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 60%;
+    transform: translateY(-250%);
+    width: 40%;
+    height: 2px;
+    background-color: #a18a68;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+#bg-expender {
+    padding: 30px 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3d3e42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
